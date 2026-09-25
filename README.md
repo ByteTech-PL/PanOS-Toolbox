@@ -226,3 +226,11 @@ przed usunięciem samej grupy. Dynamic groups pozostają fail-closed do review.
 
 Instrukcja uruchomienia, zabezpieczenia i budowania paczki niewymagającej
 Node.js na maszynie docelowej: `PanOS-Toolbox/README.md`.
+
+---
+
+## 9. Stan projektu i przebieg pracy
+
+- **STATUS.md** — bieżący stan repo: live footprint, CI/CD, gałęzie/PR, komponenty (OBSERVED / LAST_KNOWN / UNKNOWN).
+- **CHANGELOG.md** — indeks istotnych zmian.
+- **sessions/** — audytowalny zapis przebiegu pracy (sesje agentów), indeks w `sessions/README.md`.
