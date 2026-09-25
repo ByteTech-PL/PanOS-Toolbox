@@ -24,6 +24,13 @@ związanych z PanOS-Toolbox. Aplikacja `PanOS-Toolbox/backend` jest uruchamiana 
   - CodeQL: success, 2026-09-22 (run 35782396021, headSha b1faded)
   - Dependency Graph: success, 2026-09-16 (run 35153736720, headSha b1faded)
   - Security and tests: success, 2026-08-12 (run 31571156567, headSha b1faded)
+- **Znany problem CI (aktywny, last_verified_at: 2026-09-25T06:44:00+0200):** job `frontend`
+  pada na `npm audit --audit-level=high` — 1 high (nanoid <3.3.18, GHSA-2v37-7h3g-55p8)
+  + 2 moderate (vitest / @vitest/mocker, GHSA-82fw-gwwq-j7x9). Warunek **pre-existing**:
+  main b1faded przechodził audit 12.08.2026, ale od tego czasu opublikowano nowe advisories
+  dotykające zablokowany lockfile. Job `python` i `portable-windows` na tym samym runie
+  success (run 36095321599). Wymagany follow-up: `npm audit fix` / bump lockfile w osobnym
+  PR (poza zakresem rekonsyliacji).
 - Lokalna replikacja testów (last_verified_at: 2026-09-25T06:36:00+0200, Python 3.14.7 na PRIMUS):
   - backend: 118 testów OK
   - panorama_cleaner: OK (log bez błędów unittest)

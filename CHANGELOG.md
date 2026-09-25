@@ -12,3 +12,6 @@ Indeks istotnych zmian. Format: data (Europe/Warsaw) — obszar — opis.
 - `README.md`: dodano sekcję „Stan projektu i przebieg pracy" (wskaźniki STATUS/sessions/CHANGELOG).
 - Zweryfikowano read-only: brak usług live tego repo (brak kontenerów/usług/endpointów),
   CI na main zielone, wszystkie 9 zdalnych gałęzi PR zmergowane do main, brak otwartych PR.
+- Odnotowano aktywny problem CI: job `frontend` (npm audit) pada na nowo opublikowane
+  advisories (nanoid high GHSA-2v37-7h3g-55p8, vitest moderate) — pre-existing, niezależny
+  od treści zmian; follow-up bump lockfile wymagany w osobnym PR.
