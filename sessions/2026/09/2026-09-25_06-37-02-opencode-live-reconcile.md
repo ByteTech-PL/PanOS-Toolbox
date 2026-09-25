@@ -43,3 +43,15 @@
 - disposition: `done`
 - durable_memory_promoted: `false` — repo nie prowadzi MEMORY.md; promocja wymagałaby utworzenia nowego kanonicznego pliku, poza zakresem GO; uzasadnienie: knowledge zapisana w STATUS.md + ta sesja.
 - claim release: github-target-claim w ByteTech-PL/agents-global-hub#98 pozostaje własnością sesji nadrzędnej `devin-20260925-fleet-pr-sweep`; ten sub-run kończy się bez osobnego claimu (swarm-level claim), sub-run disposition: `done`.
+
+## RUN_END (dopisek po merge, 25.09.2026 ~06:55 CEST)
+- PR rekonsyliacji: #13, squash-merge do main, commit `82f63244b3ce6641f1484b80f697bc30a0ce1d21`,
+  branch `agent/opencode/20260925T0438Z-live-reconcile` usunięty z remote; lokalny main == origin/main (equal).
+- Komentarz CI w PR: https://github.com/ByteTech-PL/PanOS-Toolbox/pull/13#issuecomment-5826901869
+- Finalny stan CI na main po merge (last_verified_at: 2026-09-25T06:55:00+0200):
+  CodeQL success; Security and tests: python success, portable-windows success,
+  frontend failure — wyłącznie pre-existing npm audit (nanoid high GHSA-2v37-7h3g-55p8,
+  vitest moderate GHSA-82fw-gwwq-j7x9), udokumentowany w STATUS/CHANGELOG i komentarzu PR;
+  nie jest skutkiem tej zmiany (docs-only). Follow-up: bump lockfile w osobnym PR.
+- Markery konfliktów: brak (`rg '^(<<<<<<<|>>>>>>>)'` puste w całym repo).
+- Testy po merge: backend 118 OK, panorama_cleaner OK (świeży venv, Python 3.14.7).
