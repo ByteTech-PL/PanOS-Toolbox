@@ -2,6 +2,11 @@
 
 Indeks istotnych zmian. Format: data (Europe/Warsaw) — obszar — opis.
 
+## 05.10.2026 — dokumentacja
+
+- Usunięto katalog `sessions/` z drzewa repozytorium; zapisy przebiegu pracy są prowadzone poza tym
+  publicznym repozytorium, a `/sessions/` dodano do `.gitignore`.
+
 ## 25.09.2026 — dokumentacja / rekonsyliacja
 
 - Utworzono `STATUS.md` (SSOT stanu repo: live footprint, CI, gałęzie/PR, komponenty,

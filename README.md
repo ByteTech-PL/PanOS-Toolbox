@@ -233,4 +233,4 @@ Node.js na maszynie docelowej: `PanOS-Toolbox/README.md`.
 
 - **STATUS.md** — bieżący stan repo: live footprint, CI/CD, gałęzie/PR, komponenty (OBSERVED / LAST_KNOWN / UNKNOWN).
 - **CHANGELOG.md** — indeks istotnych zmian.
-- **sessions/** — audytowalny zapis przebiegu pracy (sesje agentów), indeks w `sessions/README.md`.
+- Zapisy przebiegu pracy (sesje) nie są przechowywane w tym publicznym repozytorium.

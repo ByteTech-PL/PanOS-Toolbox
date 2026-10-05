@@ -27,6 +27,9 @@ wheels/
 .installed.cfg
 *.egg
 
+# Local work-session records (kept outside this public repository)
+/sessions/
+
 # Virtual Environment
 venv/
 env/
