@@ -18,7 +18,7 @@ do monitorowania w tym repo.
 - Workflow `Security and tests` (.github/workflows/security.yml): 3 joby — Python (unittest +
   pip-audit + bandit), frontend (npm test/check/audit/build), portable-windows (PowerShell 5.1 +
   ConstrainedLanguage smoke test). Dodatkowo CodeQL (actions, javascript-typescript, python).
-- Stan bieżący (last_verified_at: 2026-10-05T13:20:00+0200): wszystkie joby zielone na
+- Stan bieżący (last_verified_at: 2026-10-05T13:15:00+0200): wszystkie joby zielone na
   PR #18 — `Security and tests` run 37301403434 (python, frontend, portable-windows: success),
   CodeQL run 37301399802 (success).
 - Historyczne (25.09.2026): job `frontend` padał na `npm audit --audit-level=high` po
